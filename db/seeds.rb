@@ -14,7 +14,9 @@
         brand: @brands[rand(@brands.length)],
         category: Faker::Commerce.department(max: 1, fixed_amount: true),
         description: @descriptions[rand(@descriptions.length)],
-        image_url: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTt-moY8D6NVGDiMeLYP-eqCWiGZ6CSJl8cCO3ZwlxeDzBaFhadjoCK97sg5N88espq5zVJaq3Z&usqp=CAc",
+        image_url: "https://static-assets.glossier.com/production/spree/images/attachments/000/004/649/portrait_normal/bb_haloscope_cp_balm_main.jpg?1573858755.png",
+        likes: 0
+
     )
 end
 
