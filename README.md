@@ -1,24 +1,8 @@
+Rails API Backend
 
-Technical and Complexity Requirements
+For my Mod 4 project, I created a Rails API backend with a Javascript frontend (https://github.com/Cmajewski/herd-review-frontend.git). 
 
-1. The application must be an HTML, CSS, and JavaScript frontend with a Rails API backend. All interactions between the client and the server must be handled asynchronously (AJAX) and use JSON as the communication format.
-
-2. The JavaScript application must use Object Oriented JavaScript (classes) to encapsulate related data and behavior.
-
-3. The domain model served by the Rails backend must include a resource with at least one has-many relationship. For example, if you were building an Instagram clone, you might display a list of photos with associated comments.
-
-4. The backend and frontend must collaborate to demonstrate Client-Server Communication. Your application should have at least 3 AJAX calls, covering at least 2 of Create, Read, Update, and Delete (CRUD). Your client-side JavaScript code must use fetch with the appropriate HTTP verb, and your Rails API should use RESTful conventions.
+My project is called Herd, and is a place where women can go to review health and wellness products with their own personal stories.  The women's health and wellness industry is flooded with expensive products, many of which are hard to distinguish between. Herd allows women to add a product and then add a review for that product. It also allows them to up-vote and down-vote to see top products at that time. 
 
 
-JavaScript
-[ ] Use classes and functions to organize your code into reusable pieces.
-[ ] Translate JSON responses into JavaScript model objects using ES6 class or constructor function syntax.
-[ ] Use ES6 features when appropriate (e.g. arrow functions, let & const, rest and spread syntax).
-Rails
-[ ] Follow Rails MVC and RESTful conventions. That means, for example, that a request GET /puppies ought to be handled by the PuppiesController, fetch puppies from the database using a Puppy Active Record model, and return a list of puppies as JSON.
-[X] Well-named variables and methods
-[ ] Short, single-purpose methods
-Git
-[X] Aim for a large number of small commits - commit frequently!
-[X] Add meaningful messages to your commits. When you look back at your commits with git log, the messages should describe each change.
-[ ] Don't include changes in a commit that aren't related to the commit message
+Frontend Repo: https://github.com/Cmajewski/herd-review-frontend.git
