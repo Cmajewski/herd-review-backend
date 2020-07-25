@@ -20,6 +20,12 @@
     )
 end
 
+Product.find(2).image_url="https://cdn.shopify.com/s/files/1/1737/7579/products/Miracle_Leave_In_4oz_600x600.png?v=1594740077.png"
+Product.find(3).image_url="https://cdn.shopify.com/s/files/1/0024/1631/2418/products/285-39077_64c33340-3bda-4206-b2bf-b3c9dea36170_514x514.jpg?v=1595431800.png"
+Product.find(4).image_url="https://target.scene7.com/is/image/Target/GUEST_3a964fe8-d8c6-420d-bcfa-d7160814b67f?wid=488&hei=488&fmt=pjpeg.png"
+Product.find(5).image_url="https://s7d5.scene7.com/is/image/UrbanOutfitters/56775026_000_b?$xlarge$&fit=constrain&qlt=80&wid=683.png"
+
+
 10.times do 
     review=Review.create(
         name: Faker::Name.name,
