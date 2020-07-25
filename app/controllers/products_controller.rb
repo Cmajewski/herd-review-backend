@@ -1,4 +1,8 @@
 class ProductsController <ApplicationController
+    def create 
+       Product.create(name: params[:name],image_url: params[:image_url])
+    end
+
     def index
         products=Product.all
         render json:products  
