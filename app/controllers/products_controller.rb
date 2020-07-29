@@ -1,15 +1,26 @@
 class ProductsController <ApplicationController
     def create 
-       Product.create(name: params[:name],image_url: params[:image_url])
+       product=Product.new(product_params)
+       if product.save 
+        render json: product
+       else 
+        render json: {errors: product.errors.full_messages}
+       end
     end
 
     def index
         products=Product.all
-        render json:products  
+        render json: products  
     end 
 
     def show 
         product=Product.find(params[:id])
-        render json:product
+        render json: product
+    end
+
+    private 
+
+    def product_params
+        params.require(:product).permit(:name,:brand,:category,:description,:image_url)
     end
 end
