@@ -18,6 +18,15 @@ class ProductsController <ApplicationController
         render json: product
     end
 
+    def update
+        product=Product.find(params[:id])
+        if product.update(product_params)
+            render json: product
+        else 
+            render json: {errors: product.errors.full_messages}
+        end  
+    end 
+
 
     private 
 
