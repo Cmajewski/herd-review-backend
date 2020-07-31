@@ -27,6 +27,13 @@ class ProductsController <ApplicationController
         end  
     end 
 
+    def destroy
+        product=Product.find(params[:id])
+        products=Product.all
+        product.destroy
+        render json:products
+    end 
+
 
     private 
 
