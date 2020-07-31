@@ -1,6 +1,7 @@
 class ProductsController <ApplicationController
     def create 
        product=Product.new(product_params)
+       byebug
        if product.save 
         render json: product
        else 
@@ -21,6 +22,6 @@ class ProductsController <ApplicationController
     private 
 
     def product_params
-        params.require(:product).permit(:name,:brand,:category,:description,:image_url)
+        params.require(:product).permit(:name,:brand,:category,:description,:image_url,:likes)
     end
 end
