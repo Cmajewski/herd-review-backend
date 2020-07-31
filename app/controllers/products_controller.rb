@@ -2,7 +2,6 @@ class ProductsController <ApplicationController
     def create 
        product=Product.new(product_params)
        if product.save 
-        byebug
         render json: product
        else 
         render json: {errors: product.errors.full_messages}
